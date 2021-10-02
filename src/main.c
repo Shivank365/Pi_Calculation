@@ -15,13 +15,6 @@ sem_t sem;
 
 
 
-
-/*------------------------------------------------------------------
- * Function:    Get_args
- * Purpose:     Get the command line args
- * In args:     argc, argv
- * Globals out: thread_count, n
- */
 void Get_args(int argc, char* argv[]) {
    thread_count = strtol(argv[1], NULL, 10);
    n = strtoll(argv[2], NULL, 10);
